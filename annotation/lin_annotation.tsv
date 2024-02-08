@@ -1,0 +1,19 @@
+cluster	lineage	lineage
+0	Dpre	Dpre
+1	Dpre	Dpre
+2	Dpel	Dpel
+3	Dpbla	Dpbla
+4	DN3	DN3
+5	Dpre	Dpre
+6	CD4_SP	CD4_SP
+7	DN2	DN4
+8	DN4	Dpre
+9	Dpre	DN2
+10	Dpre	Dpre
+11	CD8_SP	CD8_SP
+12	DC/ETP/Mac	DC/ETP/Mac
+13	Endo/Mes/cTEC/mTEC	Endo/Mes/cTEC/mTEC
+14	DN1	DN1
+15	RBC	CD8_SP
+16	NK/ILC	RBC
+		NK/ILC
