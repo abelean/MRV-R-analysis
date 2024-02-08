@@ -1,0 +1,7 @@
+B lymphocytes	Thymic epithelial cells	Fibroblasts	Conventional type 1 dendritic cells	Plasmacytoid dendritic cells	Neutrophils	Conventional type 2 dendritic cells	Migratory dendritic cells	Cycling cells	Macrophages	Monocytes	T cells	DN	__T	DPT-P	DPT-Q	CD4	CD8	NK
+Ms4a1	Epcam	Dcn	Xcr1	Siglech	Lyz	Cd209a	Ccr7	Mki67	Mrc1	Ly6c2	Cd3d	Ptcra	Cd4-	Cd4	Cd4	Bcl2	Cd8a	Cd3d
+Cd79a	Krt8	Col1a2	Clec9a	Bst	Lcn2	Irf8	Ccl22	Top2a	C1qc	Ccr2	Cd3e	Trdc	Cd8a-	Cd8a	Cd8a	Lef1	Nkg7	Klrd1
+Cd79b	Cdh1	Col1a1		Tlr7	Camp		Ccl17	Stmn1	C1qb	Chil3	Cd3g		Trdc	Rorc	Rag1	Tox	Ms4a4b	Klrc2
+	Aire				Csf3r		Nudt17		Cd68	Cx3cr1	Cd2		Trgv2	Mki67	Rag2	Itm2a	Klrb1	Nkg7
+	Ccl19				Cxcr2		Cacnb3			Ifitm3	Trac		Tcrg-C1	Ccnd3				Xcl1
+											Trbc1		Tcrg-C2					
