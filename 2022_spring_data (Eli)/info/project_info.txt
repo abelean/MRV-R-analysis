@@ -1,0 +1,5 @@
+data_folder	rgid	rgsm	infection	day_of_life	status
+Mock_DoL4	Mock_DoL4	Mock_DoL4	Mock	DoL 4	Mock_DoL4
+Mock_DoL6	Mock_DoL6	Mock_DoL6	Mock	DoL 6	Mock_DoL6
+MRV_DoL4	MRV_DoL4	MRV_DoL4	MRV	DoL 4	MRV_DoL4
+MRV_DoL6	MRV_DoL6	MRV_DoL6	MRV	DoL 6	MRV_DoL6
