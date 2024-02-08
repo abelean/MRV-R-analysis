@@ -1,0 +1,64 @@
+---
+title: "put markers in a nice Excel file"
+author: "Elisha Roberson"
+date: "2022-04-06"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+# Analysis related to Tarin MRV infection data
+
+```{r load_libraries}
+# libraries
+library( here )
+library( tidyverse )
+library( openxlsx )
+```
+
+```{r to_excel}
+# read marker types
+marker_type <- read_tsv( file = here( 'results', 'marker_type_tests.tsv' ) ) %>%
+  as.data.frame( .  ) %>%
+  unique( . )
+
+# make an excel object
+workbook <- createWorkbook()
+modifyBaseFont( wb = workbook, fontSize = 11, fontName = 'Arial' )
+
+# read each file
+for ( idx in 1:nrow( marker_type ) ) {
+  cluster <- marker_type[ idx, "Cluster" ] %>%
+    as.integer( . )
+
+  type <- marker_type[ idx, "Type" ] %>%
+    str_replace_all( string = ., pattern = " ", replacement = "" )
+
+  cluster_string <- case_when(
+    cluster > 9 ~ paste0( "Cluster_", as.character( cluster ) ),
+    TRUE ~ paste0( 'Cluster_0', as.character( cluster ) )
+  )
+
+  fname <- paste0( cluster_string, "_Markers.tsv" )
+
+  markers <- read_tsv( file = here( 'results', 'lineage_markers', fname ) )
+
+  addWorksheet( wb = workbook, sheetName = cluster_string )
+  writeData( wb = workbook, sheet = cluster_string, x = markers )
+  setColWidths( wb = workbook, sheet = cluster_string, cols = 1:20, widths = 'auto' )
+  freezePane( wb = workbook, sheet = cluster_string, firstRow = TRUE, firstCol = TRUE )
+}
+
+# save
+saveWorkbook( wb = workbook, file = here( 'results', 'initial_clusters.xlsx' ), overwrite = TRUE )
+```
+
+# Session info
+```{r session_information}
+# Session info
+Sys.time()
+
+getwd()
+
+sessionInfo()
+```

@@ -1,0 +1,40 @@
+---
+title: ""
+author: "Elisha Roberson"
+date: "2021-03-01"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+# Analysis related to Tarin MRV infection data
+
+```{r load_libraries}
+library( here )
+library( tidyverse )
+```
+
+```{r source}
+source( file = here::here( "src", "shared_r_functions.R" ) )
+```
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	echo = TRUE,
+	message = FALSE,
+	fig.path = paste0( figure_path, "/" ),
+	fig.keep = 'all',
+	dpi = 300,
+	fig.width = 9.5,
+	fig.height = 7.34
+)
+```
+
+# Session info
+```{r session_information}
+Sys.time()
+
+getwd()
+  
+sessionInfo()
+```
