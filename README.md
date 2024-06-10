@@ -1,5 +1,5 @@
 # MRV-R-analysis
-MRV analysis perfromed for "Transcriptomic profiling of thymic dysregulation and viral tropism after neonatal roseolovirus infection" paper, *doi: 10.3389/fimmu.2024.1375508* 
+MRV analysis performed for "Transcriptomic profiling of thymic dysregulation and viral tropism after neonatal roseolovirus infection" paper, *doi: 10.3389/fimmu.2024.1375508* 
 
 
 Primarily run on the [abelean/seurat_desctools:4.1.0](https://hub.docker.com/layers/abelean/seurat_desctools/4.1.0/images/sha256-e4de4c527da6caab20a0b648307abec2155e238c0b6680ca6c2a513e2739d538?context=repo
