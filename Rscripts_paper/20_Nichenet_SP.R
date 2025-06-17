@@ -231,7 +231,6 @@ p_ligand_receptor_network = vis_ligand_receptor_network %>%
 
 p_ligand_receptor_network
 
-#Idk something bonafide
 lr_network_strict = lr_network %>%
   filter(database != "ppi_prediction_go" & database != "ppi_prediction")
 ligands_bona_fide = lr_network_strict %>%
@@ -488,7 +487,6 @@ p_ligand_receptor_network = vis_ligand_receptor_network %>%
 
 p_ligand_receptor_network
 
-#Idk something bonafide
 lr_network_strict = lr_network %>%
   filter(database != "ppi_prediction_go" & database != "ppi_prediction")
 ligands_bona_fide = lr_network_strict %>%
